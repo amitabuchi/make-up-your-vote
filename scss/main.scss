@@ -85,9 +85,9 @@ p{
 	color: $primary-blue;
 }
 
-.main-top-nav button{
+.main-top-nav form{
     font-family: 'Oswald';
-    font-size:  1.20rem;
+    font-size:  1.25rem;
     display: block;
     color: $primary-blue;
 }
@@ -95,9 +95,9 @@ p{
 .main-top-nav a:hover,
 .main-top-nav a:active,
 .main-top-nav a:focus,
-.main-top-nav button:hover,
-.main-top-nav button:active,
-.main-top-nav button:focus {
+.main-top-nav form:hover,
+.main-top-nav form:active,
+.main-top-nav form:focus {
     color: $primary-red;
 }
 
@@ -360,6 +360,162 @@ p{
 }
 /* End of Parties Section*/
 /*******************************************************************/
+
+/* Map image section */
+
+.img-wrap{
+    width: 600px; /*org 727px*/
+    margin: 0 auto;
+    // margin-top: -2rem;
+}
+
+.result-info{
+    margin-bottom: 10rem;
+    // width: 45%;
+}
+
+.mps-box{ /* Background div of MPS*/
+    padding: 10px;
+    text-align: center;
+}
+
+.mps-box ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.mps-img{
+    width: 100%;
+}
+
+.mps-name{ /* MPS names */
+    color: #fff;
+    font-family: 'Oswald';
+    font-size: 1.3rem;
+    background-color: $primary-blue;
+    // width: 10rem;
+    padding: 0.7rem;
+    margin-bottom: 1.3rem;
+    text-align: center;
+}
+
+.mps-party{
+    font-family: 'Oswald';
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+/*********************
+    MAP resize media
+**********************/
+/* Mob */
+/* from 320 and up*/
+@media screen and (min-width: 20em) and (max-width: 25rem) {
+
+    .result-info{
+        width: 87%;
+    }
+
+    .mps-party{
+        margin-bottom: 3rem;
+    }
+
+}
+
+@media screen and (min-width: 25.1em) and (max-width: 34.374em){
+    .result-info{
+        width: 70%;
+    }
+
+    .mps-party{
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width: 34.375em) and (max-width: 39.99em){
+    .result-info{
+        width: 50%;
+    }
+
+    .mps-party{
+        margin-bottom: 3rem;
+    }
+
+}
+
+@media screen and (min-width: 40em) and (max-width: 50em){
+    .result-info{
+        width: 86%;
+    }
+
+    .mps-name{
+        font-size: 0.9rem;
+        padding: 0.4rem
+    }
+
+    .mps-party{
+        font-size: 1rem;
+        margin-bottom: 3rem;
+    }
+
+}
+
+@media screen and (min-width: 50.1em) and (max-width: 56.24em){
+    .result-info{
+        width: 80%;
+    }
+    .mps-name{
+        font-size: 1rem;
+        padding: 0.4rem
+    }
+
+    .mps-party{
+        font-size: 1rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width: 56.25em) and (max-width: 62.4em){
+    .result-info{
+        width: 70%;
+    }
+
+    .mps-name{
+        font-size: 1rem;
+        padding: 0.6rem
+    }
+
+    .mps-party{
+        font-size: 1rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width: 62.5em){
+    .result-info{
+        width: 60%;
+    }
+
+    // .resultBox{
+    //     margin-left: 10%;
+    // }
+    .mps-name{
+        font-size: 1.25rem;
+        padding: 0.6rem
+    }
+
+    .mps-party{
+        font-size: 1.1rem;
+        margin-bottom: 3rem;
+    }
+}
+
+
+/* End of Map image section */
+/*End of Map*/
+/**********************************************************/
+
 /********************************************************************
                            FOOTER
 ********************************************************************/
@@ -576,14 +732,14 @@ p{
 /* END OFPROGRESS BARS */
 
 
-/*SIGN UP FORM */
-
+/********SIGN UP FORM **************/
 /*Wraps the whole form*/
 .form-container {
   color: $primary-white;
   margin-top: $spacing;
   background-color: $primary-blue;
   padding: $spacing;
+  margin: $spacing * 2 0;
   
   h3 {
       color: $primary-white;
@@ -863,7 +1019,7 @@ Parties Section on Home Page */
         padding-top: 1rem;
         margin-bottom: 0;
     }
-    .main-top-nav a, .main-nav a{
+    .main-top-nav a, .main-nav a, .main-top-nav form {
         font-size: 1rem; /* 16px */
     }
 
@@ -898,6 +1054,10 @@ Parties Section on Home Page */
         font-size: 1.7rem;
         margin: 0;
         padding: 10px;
+    }
+    
+    .main-top-nav button {
+        font-size: 1rem;
     }
     
     .parties-img-container {
@@ -1011,7 +1171,7 @@ Parties Section on Home Page */
             margin-bottom: 0;
     }
 
-    .main-top-nav a, .main-nav a{
+    .main-top-nav a, .main-nav a, .main-top-nav form{
             font-size: 1rem; /* 16px */
     }
 
@@ -1121,7 +1281,7 @@ Parties Section on Home Page */
             margin-bottom: 0;
     }
 
-    .main-top-nav a, .main-nav a, main-top-nav button{
+    .main-top-nav a, .main-nav a, .main-top-nav form{
         font-size: 1.2rem; /* 24px */
     }
 
